@@ -35,6 +35,8 @@
             this.btnGenerate = new Guna.UI2.WinForms.Guna2GradientButton();
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.label3 = new System.Windows.Forms.Label();
+            this.cbFileFormats = new Guna.UI2.WinForms.Guna2ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -48,9 +50,10 @@
             this.txtAssemblyPath.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtAssemblyPath.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtAssemblyPath.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtAssemblyPath.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtAssemblyPath.Font = new System.Drawing.Font("Calibri", 11F, System.Drawing.FontStyle.Bold);
+            this.txtAssemblyPath.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.txtAssemblyPath.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtAssemblyPath.Location = new System.Drawing.Point(182, 170);
+            this.txtAssemblyPath.Location = new System.Drawing.Point(201, 225);
             this.txtAssemblyPath.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtAssemblyPath.Multiline = true;
             this.txtAssemblyPath.Name = "txtAssemblyPath";
@@ -58,18 +61,18 @@
             this.txtAssemblyPath.PlaceholderText = "";
             this.txtAssemblyPath.ScrollBars = System.Windows.Forms.ScrollBars.Both;
             this.txtAssemblyPath.SelectedText = "";
-            this.txtAssemblyPath.Size = new System.Drawing.Size(530, 137);
+            this.txtAssemblyPath.Size = new System.Drawing.Size(512, 120);
             this.txtAssemblyPath.TabIndex = 0;
             this.txtAssemblyPath.Validating += new System.ComponentModel.CancelEventHandler(this.txtAssemblyPath_Validating);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label1.Location = new System.Drawing.Point(24, 222);
+            this.label1.Font = new System.Drawing.Font("Calibri", 11F, System.Drawing.FontStyle.Bold);
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.label1.Location = new System.Drawing.Point(16, 244);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(142, 21);
+            this.label1.Size = new System.Drawing.Size(158, 23);
             this.label1.TabIndex = 1;
             this.label1.Text = "Class Library Path :";
             // 
@@ -78,7 +81,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Calibri", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(77)))), ((int)(((byte)(165)))));
-            this.label2.Location = new System.Drawing.Point(168, 45);
+            this.label2.Location = new System.Drawing.Point(153, 32);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(426, 45);
             this.label2.TabIndex = 2;
@@ -94,9 +97,11 @@
             this.btnGenerate.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnGenerate.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGenerate.ForeColor = System.Drawing.Color.White;
-            this.btnGenerate.Location = new System.Drawing.Point(524, 332);
+            this.btnGenerate.Image = global::DocumentationGenerator.Properties.Resources.magic_wand;
+            this.btnGenerate.ImageSize = new System.Drawing.Size(35, 35);
+            this.btnGenerate.Location = new System.Drawing.Point(270, 384);
             this.btnGenerate.Name = "btnGenerate";
-            this.btnGenerate.Size = new System.Drawing.Size(188, 63);
+            this.btnGenerate.Size = new System.Drawing.Size(241, 68);
             this.btnGenerate.TabIndex = 4;
             this.btnGenerate.Text = "Generate";
             this.btnGenerate.Click += new System.EventHandler(this.btnGenerate_Click);
@@ -105,12 +110,47 @@
             // 
             this.errorProvider1.ContainerControl = this;
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Calibri", 11F, System.Drawing.FontStyle.Bold);
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.label3.Location = new System.Drawing.Point(16, 140);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(109, 23);
+            this.label3.TabIndex = 5;
+            this.label3.Text = "File Format :";
+            // 
+            // cbFileFormats
+            // 
+            this.cbFileFormats.BackColor = System.Drawing.Color.Transparent;
+            this.cbFileFormats.BorderRadius = 22;
+            this.cbFileFormats.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cbFileFormats.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbFileFormats.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cbFileFormats.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cbFileFormats.Font = new System.Drawing.Font("Calibri", 11F, System.Drawing.FontStyle.Bold);
+            this.cbFileFormats.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.cbFileFormats.ItemHeight = 40;
+            this.cbFileFormats.Items.AddRange(new object[] {
+            "Markdown",
+            "Html",
+            "Xml"});
+            this.cbFileFormats.Location = new System.Drawing.Point(315, 132);
+            this.cbFileFormats.Name = "cbFileFormats";
+            this.cbFileFormats.Size = new System.Drawing.Size(242, 46);
+            this.cbFileFormats.StartIndex = 0;
+            this.cbFileFormats.TabIndex = 6;
+            this.cbFileFormats.Validating += new System.ComponentModel.CancelEventHandler(this.cbFileFormats_Validating);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(740, 497);
+            this.ClientSize = new System.Drawing.Size(740, 481);
+            this.Controls.Add(this.cbFileFormats);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.btnGenerate);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -132,6 +172,8 @@
         private Guna.UI2.WinForms.Guna2GradientButton btnGenerate;
         private System.Windows.Forms.SaveFileDialog saveFileDialog1;
         private System.Windows.Forms.ErrorProvider errorProvider1;
+        private System.Windows.Forms.Label label3;
+        private Guna.UI2.WinForms.Guna2ComboBox cbFileFormats;
     }
 }
 
