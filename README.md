@@ -1,11 +1,11 @@
 # Documentation Generator
 
 ## Overview
-This project provides a user-friendly and reliable tool for automatically generating comprehensive Markdown-formatted documentation for C# class libraries. By leveraging reflection and custom attributes, it extracts essential information (method signatures, comments, summaries, return values) to create clear and informative documentation.
+This project provides a user-friendly tool for automatically generating documentation for C# class libraries. It supports multiple output formats, including XML, HTML, and Markdown. By leveraging reflection and custom attributes, the tool extracts essential information such as method signatures, comments, summaries, and return values to create clear and informative documentation.
 
 ## Key Features
 - Automatic Documentation Generation: Simplifies documentation creation without manual effort.
-- Markdown Format: Output is human-readable, easy to edit, and compatible with GitHub, wikis, and other platforms.
+- Multiple Format Support: Choose from XML, HTML, and Markdown for the generated documentation.
 - Customizable Output: Specify a custom file path for the generated documentation.
 - User-Friendly Interface: Select the target assembly and save documentation with ease.
 - Input Validation: Ensures valid class library (DLL) file paths.
@@ -17,8 +17,9 @@ This project provides a user-friendly and reliable tool for automatically genera
 1. Compile the Project: Build the project using Visual Studio or .NET Framework tools.
 2. Run the Application: Launch the executable (.exe) file.
 3. Specify Assembly Path: Enter the full path to the target C# class library (DLL) file.
-4. Click "Generate" Button: Initiate the documentation generation process.
-5. Save Documentation: Choose a location and filename to save the generated Markdown file.
+4. Select File Format: Choose the desired file format for the generated documentation.
+5. Click "Generate" Button: Initiate the documentation generation process.
+6. Save Documentation: Choose a location and filename to save the generated Markdown file.
 
 ## Additional Information
 ### DocumentationAttribute Custom Attribute
@@ -55,3 +56,8 @@ public class MyClass
 - C# .NET Framework
 - WinForms (Desktop Interface)
 - Visual Studio (IDE)
+
+## Demo 
+You can also watch a demo of the Documentation Generator in action by clicking the link below:
+
+[Demo Video](https://drive.google.com/file/d/1jioMRtx3zuvP4miUVDrkm4mRRsx3rR3Y/view?usp=drive_link)
